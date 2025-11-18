@@ -21,21 +21,21 @@ class Expr:
     __repr__ = __str__
 
     def __add__(self, b):
-        return Expr("--=-" + str(Expr(self.res)) + str(Expr(b.res)))
+        return Expr("--=-" + str(Expr(self)) + str(Expr(b)))
 
     def __sub__(self, b):
-        return Expr("--==" + str(Expr(self.res)) + str(Expr(b.res)))
+        return Expr("--==" + str(Expr(self)) + str(Expr(b)))
 
     def __mul__(self, b):
-        return Expr("-=--" + str(Expr(self.res)) + str(Expr(b.res)))
+        return Expr("-=--" + str(Expr(self)) + str(Expr(b)))
 
     def __truediv__(self, b):
-        return Expr("-=-=" + str(Expr(self.res)) + str(Expr(b.res)))
+        return Expr("-=-=" + str(Expr(self)) + str(Expr(b)))
 
     __floordiv__ = __truediv__
 
     def __mod__(self, b):
-        return Expr("-==-" + Expr(self.res) + Expr(b.res))
+        return Expr("-==-" + str(Expr(self)) + str(Expr(b)))
 
 
 Inc = lambda: Expr("----")
