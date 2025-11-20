@@ -17,7 +17,7 @@ You can read more on [Esolang wiki](https://esolangs.org/wiki/Readable).
   * `xkcd_(readable).rdb`: XKCD Random number
   * `looping_counter_(readable).rdb`: Looping counter
   * `df_(readable).rdb`: [Deadfish](https://esolangs.org/wiki/Deadfish) interpreter
-  * `bf_(readable).rdb`: [Brainfuck](https://esolangs.org/wiki/brainfuck) interpreter (*Ridiculously slow!*), which means that this esolang is Turing-complete.
+  * `bf_(readable).rdb`: [Brainfuck](https://esolangs.org/wiki/brainfuck) interpreter (*Ridiculously slow!*), which means that this esolang is Turing-complete. Use `!` to separate program and input.
 
 ### non-standard behavior of the interpreter
 * `=` is also accepted as an alternative of U+2212.
